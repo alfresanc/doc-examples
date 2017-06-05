@@ -1,5 +1,5 @@
 <!-- BEGIN MUNGE: GENERATED_TOC -->
-- [v1.6.4](#v164) 13/05/17-21:00
+- ###[v1.6.4](#v164) (21/05/17 21:00)
   - [Modified files for v1.6.4](#downloads-for-v164)
   - [Changes to API / Connetions / Request](#changes-to-api-resources)
     - [Other notable changes](#other-notable-changes-1)
@@ -19,6 +19,7 @@
   - [Changelog since v1.6.0-rc.1](#changelog-since-v160-rc1)
     - [Previous Releases Included in v1.6.0](#previous-releases-included-in-v160)
     - [Server Binaries](#server-binaries-14)
+- ###[v1.4.0](#v140) (18/05/17 21:00)
 - [v1.4.0](#v140)
   - [Downloads](#downloads-8)
   - [Features](#features-1)
@@ -47,8 +48,6 @@ filename | sha256 hash
 
 ## Changelog since v1.6.3
 
-### Action Required
-
 ### Other notable changes
 
 * Fix kubelet panic during disk eviction introduced in 1.6.3. ([#46049](https://github.com/kubernetes/kubernetes/pull/46049), [@enisoc](https://github.com/enisoc))
@@ -56,10 +55,11 @@ filename | sha256 hash
 
 ## 1. Provisioning Procedure
 
+### Action Required
+
 ```
 go build -o toc
 ```
-
 ## WARNING: etcd backup strongly recommended
 
 Before updating to 1.6, you are strongly recommended to back up your etcd data.
@@ -115,11 +115,6 @@ d v3, which is enabled by default.
       * If you are using plugins other than `bridge`, make sure you have
         updated custom plugins to the latest version that is compatible.
 
-### Service
-* The 'endpoints.beta.kubernetes.io/hostnames-map' annotation is no longer supported.  Users can use the 'Endpoints.subsets[].addresses[].hostname' field instead. ([#39284](https://github.com/kubernetes/kubernetes/pull/39284), [@bowei](https://github.com/bowei))
-
-### StatefulSet [ownership of Pods may change](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/controller-ref.md#upgrading). ([#42080](https://github.com/kubernetes/kubernetes/pull/42080), [@enisoc](https://github.com/enisoc))
-
 ## Deprecations
 * Remove extensions/v1beta1 Jobs resource, and job/v1beta1 generator. ([#38614](https://github.com/kubernetes/kubernetes/pull/38614), [@soltysh](https://github.com/soltysh))
 * `federation/deploy/deploy.sh` was an interim solution introduced in Kubernetes v1.4 to simplify the federation control plane deployment experience. Now that we have `kubefed`, we are deprecating `deploy.sh` scripts. ([#38902](https://github.com/kubernetes/kubernetes/pull/38902), [@madhusudancs](https://github.com/madhusudancs))
@@ -128,10 +123,6 @@ d v3, which is enabled by default.
 * DaemonSet now respects ControllerRef to avoid fighting over Pods. ([#42173](https://github.com/kubernetes/kubernetes/pull/42173), [@enisoc](https://github.com/enisoc))
 * Make DaemonSet respect critical pods annotation when scheduling. ([#42028](https://github.com/kubernetes/kubernetes/pull/42028), [@janetkuo](https://github.com/janetkuo))
 * Implement the update feature for DaemonSet. ([#41116](https://github.com/kubernetes/kubernetes/pull/41116), [@lukaszo](https://github.com/lukaszo))
-* Make DaemonSets survive taint-based evictions when nodes turn unreachable/notReady. ([#41896](https://github.com/kubernetes/kubernetes/pull/41896), [@kevin-wangzefeng](https://github.com/kevin-wangzefeng))
-* Make DaemonSet controller respect node taints and pod tolerations. ([#41172](https://github.com/kubernetes/kubernetes/pull/41172), [@janetkuo](https://github.com/janetkuo))
-* DaemonSet controller actively kills failed pods (to recreate them) ([#40330](https://github.com/kubernetes/kubernetes/pull/40330), [@janetkuo](https://github.com/janetkuo))
-* DaemonSet ObservedGeneration ([#39157](https://github.com/kubernetes/kubernetes/pull/39157), [@lukaszo](https://github.com/lukaszo))
 
 #### Bug fixes
 * Add image cache to fix the issue where kubelet hands when reporting the node
@@ -140,25 +131,12 @@ d v3, which is enabled by default.
 * Fix logic error in graceful deletion that caused pods not being able to
   be deleted. ([#37721](https://github.com/kubernetes/kubernetes/pull/37721),
   [@derekwaynecarr](https://github.com/derekwaynecarr))
-* Fix ConfigMap for Windows Containers.
-  ([#39373](https://github.com/kubernetes/kubernetes/pull/39373),
-  [@jbhurat](https://github.com/jbhurat))
-* Fix the “pod rejected by kubelet may stay at pending forever” bug.
-  (https://github.com/kubernetes/kubernetes/pull/37661),
-  [@yujuhong](https://github.com/yujuhong))
 
 ### Previous Releases Included in v1.6.0
 - [v1.6.0-rc.1](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v160-rc1)
 - [v1.6.0-beta.4](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v160-beta4)
-- [v1.6.0-beta.3](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v160-beta3)
-- [v1.6.0-beta.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v160-beta2)
-- [v1.6.0-beta.1](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v160-beta1)
-- [v1.6.0-alpha.3](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v160-alpha3)
-- [v1.6.0-alpha.2](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v160-alpha2)
-- [v1.6.0-alpha.1](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v160-alpha1)
+
 **No notable changes for this release**
-
-
 
   * <strong>Significant scale improvements</strong>. Increased cluster scale by 400% to 1000 nodes with 30,000 pods per cluster.
 Kubelet supports 100 pods per node with 4x reduced system overhead.
@@ -167,14 +145,5 @@ Kubelet supports 100 pods per node with 4x reduced system overhead.
 configuration to be stored as a Kubernetes API object and pulled dynamically on
 container startup, as an alternative to baking in command-line flags when a
 container is built.
-     * Turnkey Deployments (Deployment API (Beta) in the Extensions API group)
-automate deployment and rolling updates of applications, specified
-declaratively. It handles versioning, multiple simultaneous rollouts,
-aggregating status across all pods, maintaining application availability, and
-rollback.
-  * <strong>Automated cluster management: </strong>
-     * Kubernetes clusters can now span zones within a cloud provider. Pods from a
-service will be automatically spread across zones, enabling applications to
-tolerate zone failure.
 
 <img src="docs/images/newgui.png" width="" alt="Dashboard UI screenshot showing cards that represent applications that run inside a cluster" title="Dashboard UI apps screen">
