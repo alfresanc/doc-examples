@@ -1,19 +1,21 @@
 <!-- BEGIN MUNGE: GENERATED_TOC -->
 ### [v1.6.4](#v164) (21/05/17 21:00)
-- [Change / instalation name](change-instalation-name)
-	- [Date and hour](#date-and-hour)
-	- [Responsible contact](#responsible-contact)
-- [Affected files](#affected-files)
-	- [Modified files](#affected-files)
-
+- [Change / Instalation Name](change-instalation-name)
+	- [Date and Hour](#date-and-hour)
+	- [Responsible Contact](#responsible-contact)
+	- [Nissan Approbation](#nissan-approbation)
+- [Affected Files](#affected-files)
 - [Notable Changes to Existing Behavior](#notable-changes-to-existing-behavior)
-	- [Code updates and features](#major-updates-and-notable-features)
-    - [Known Issues and Important Steps before Upgrading](#known-issues-and-important-steps-before-upgrading)
+	- [Code updates and Deatures](#major-updates-and-notable-features)
+    - [Known Issues and Important Steps Before Upgrading](#known-issues-and-important-steps-before-upgrading)
 	- [Deprecations](#deprecations)
 	- [Experimental Features](#experimental-features-2)
+	- [Required Database Modifications](#required-database-modifications)
+	- [Views Modifications](#views-modifications)
 - [Provisioning Procedure](#provisioning-procedure)
 	- [External Dependency Version Information](#external-dependency-version-information)
-  	- [Action Required](#action-required)
+	- [Rollback Procedures](#rollback-procedures)
+  	- [Actions Required](#actions-required)
 
 <!-- END MUNGE: GENERATED_TOC -->
 
