@@ -692,6 +692,15 @@ filename | sha256 hash
 
 ### Action Required
 
+## 1. Compilación
+
+```
+cd toc/app
+```
+```
+go build -o toc
+```
+
 * `kubectl create role` and `kubectl create clusterrole` no longer allow specifying multiple resource names as comma-separated arguments. Use repeated `--resource-name` arguments to specify multiple resource names.  ([#44950](https://github.com/kubernetes/kubernetes/pull/44950), [@xilabao](https://github.com/xilabao))
 
 ### Other notable changes
