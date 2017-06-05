@@ -1,5 +1,5 @@
 <!-- BEGIN MUNGE: GENERATED_TOC -->
-- ###[v1.6.4](#v164) (21/05/17 21:00)
+###- [v1.6.4](#v164) (21/05/17 21:00)
   - [Modified files for v1.6.4](#downloads-for-v164)
   - [Changes to API / Connetions / Request](#changes-to-api-resources)
     - [Other notable changes](#other-notable-changes-1)
@@ -19,8 +19,8 @@
   - [Changelog since v1.6.0-rc.1](#changelog-since-v160-rc1)
     - [Previous Releases Included in v1.6.0](#previous-releases-included-in-v160)
     - [Server Binaries](#server-binaries-14)
-- ###[v1.4.0](#v140) (18/05/17 21:00)
-- [v1.4.0](#v140)
+
+###- [v1.4.0](#v140) (18/05/17 21:00)
   - [Downloads](#downloads-8)
   - [Features](#features-1)
   - [Notable Changes to Existing Behavior](#notable-changes-to-existing-behavior-1)
