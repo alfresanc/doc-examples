@@ -1,37 +1,21 @@
 <!-- BEGIN MUNGE: GENERATED_TOC -->
 ### [v1.6.4](#v164) (21/05/17 21:00)
-  - [Modified files for v1.6.4](#downloads-for-v164)
-  - [Changes to API / Connetions / Request](#changes-to-api-resources)
-    - [Other notable changes](#other-notable-changes-1)
-  - [Major updates and notable features](#major-updates-and-release-themes)
-  - [Action Required](#action-required-3)
-    - [Certificates API](#certificates-api)
-    - [Autoscaling](#autoscaling)
-  - [Deprecations](#deprecations)
-    - [Cluster Provisioning Scripts](#cluster-provisioning-scripts)
-    - [Other Deprecations](#other-deprecations)
-  - [Changes to Major Components](#changes-to-major-components)
-    - [API Server](#api-server)
-    - [API Server Aggregator](#api-server-aggregator)
-  - [Changes to Addons](#changes-to-addons)
-    - [Dashboard](#dashboard)
-  - [External Dependency Version Information](#external-dependency-version-information)
-  - [Changelog since v1.6.0-rc.1](#changelog-since-v160-rc1)
-    - [Previous Releases Included in v1.6.0](#previous-releases-included-in-v160)
-    - [Server Binaries](#server-binaries-14)
+- [Change / instalation name](change-instalation-name)
+	- [Date and hour](#date-and-hour)
+	- [Responsible contact](#responsible-contact)
+- [Modified files](#modified-files)
+- [Major updates and notable features](#major-updates-and-notable-features)
+- [Notable Changes to Existing Behavior](#notable-changes-to-existing-behavior)
+    - [Known Issues and Important Steps before Upgrading](#known-issues-and-important-steps-before-upgrading)
+	- [Deprecations](#deprecations)
+	- [Experimental Features](#experimental-features-2)
+- [Provisioning Procedure](#provisioning-procedure)
+	- [External Dependency Version Information](#external-dependency-version-information)
+  	- [Action Required](#action-required)
 
-### [v1.4.0](#v140) (18/05/17 21:00)
-  - [Downloads](#downloads-8)
-  - [Features](#features-1)
-  - [Notable Changes to Existing Behavior](#notable-changes-to-existing-behavior-1)
-  - [Highlights](#highlights)
-  - [Known Issues and Important Steps before Upgrading](#known-issues-and-important-steps-before-upgrading)
-      - [Docker runtime Known Issues](#docker-runtime-known-issues)
-    - [Experimental Features](#experimental-features-2)
 <!-- END MUNGE: GENERATED_TOC -->
 
 <!-- NEW RELEASE NOTES ENTRY -->
-
 
 # v1.6.4
 
@@ -39,12 +23,10 @@
 
 ### Modified Files
 
-filename | sha256 hash
+filename | file path
 -------- | -----------
-[kubernetes-client-darwin-386.tar.gz](https://dl.k8s.io/v1.6.4/kubernetes-client-darwin-386.tar.gz) | `e2db37a1cf3dff342e9ba25506c96edba0cbc9b65984dfe985a7ab45df64f93e`
-[kubernetes-client-darwin-amd64.tar.gz](https://dl.k8s.io/v1.6.4/kubernetes-client-darwin-amd64.tar.gz) | `0d49df4b06f76b5a6e168f72ac0088194d4267cc888880f7d0f23e558cd0ee32`
-[kubernetes-client-linux-386.tar.gz](https://dl.k8s.io/v1.6.4/kubernetes-client-linux-386.tar.gz) | `5e218cc7f01d6fa71d0a10a30eea2724ee111db3bbae5a03f0c560cd0d24a5df`
-[kubernetes-client-linux-amd64.tar.gz](https://dl.k8s.io/v1.6.4/kubernetes-client-linux-amd64.tar.gz) | `4c8dbd03a66d871f03592e84ed98d205d2d0e0c0f6d48c7b60f3e9840ad04df8`
+[kubernetes-client-darwin-386.tar.gz](https://dl.k8s.io/v1.6.4/kubernetes-client-darwin-386.tar.gz) | `/var/www/html/packages.json`
+[kubernetes-client-darwin-amd64.tar.gz](https://dl.k8s.io/v1.6.4/kubernetes-client-darwin-amd64.tar.gz) | `/var/www/html/index.js`
 
 ## Changelog since v1.6.3
 
@@ -54,6 +36,8 @@ filename | sha256 hash
 * Fix pods failing to start if they specify a file as a volume subPath to mount. ([#46046](https://github.com/kubernetes/kubernetes/pull/46046), [@enisoc](https://github.com/enisoc))
 
 ## 1. Provisioning Procedure
+
+
 
 ### Action Required
 
