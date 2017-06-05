@@ -3,9 +3,11 @@
 - [Change / instalation name](change-instalation-name)
 	- [Date and hour](#date-and-hour)
 	- [Responsible contact](#responsible-contact)
-- [Modified files](#modified-files)
-- [Major updates and notable features](#major-updates-and-notable-features)
+- [Affected files](#affected-files)
+	- [Modified files](#affected-files)
+
 - [Notable Changes to Existing Behavior](#notable-changes-to-existing-behavior)
+	- [Code updates and features](#major-updates-and-notable-features)
     - [Known Issues and Important Steps before Upgrading](#known-issues-and-important-steps-before-upgrading)
 	- [Deprecations](#deprecations)
 	- [Experimental Features](#experimental-features-2)
@@ -23,8 +25,8 @@
 
 ### Modified Files
 
-filename | file path
--------- | -----------
+filename | file path on this version
+-------- | -------------------------
 [kubernetes-client-darwin-386.tar.gz](https://dl.k8s.io/v1.6.4/kubernetes-client-darwin-386.tar.gz) | `/var/www/html/packages.json`
 [kubernetes-client-darwin-amd64.tar.gz](https://dl.k8s.io/v1.6.4/kubernetes-client-darwin-amd64.tar.gz) | `/var/www/html/index.js`
 
