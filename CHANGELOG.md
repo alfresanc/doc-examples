@@ -1,9 +1,6 @@
 <!-- BEGIN MUNGE: GENERATED_TOC -->
 # [v1.6.4](#v164)
-- [Change / Instalation Name](#change-instalation-name)
-	- [Date and Hour](#date-and-hour)
-	- [Responsible Contact](#responsible-contact)
-	- [Nissan Approbation](#nissan-approbation)
+- [Change Description](#change-description)
 - [Affected Files](#affected-files)
 - [Notable Changes to Existing Behavior](#notable-changes-to-existing-behavior)
 	- [Code updates and Features](#major-updates-and-notable-features)
@@ -17,13 +14,14 @@
 	- [Rollback Procedures](#rollback-procedures)
   	- [Actions Required](#actions-required)
 
+
 <!-- END MUNGE: GENERATED_TOC -->
 
 <!-- NEW RELEASE NOTES ENTRY -->
 
 ## v1.6.4
 [Documentation](https://docs.k8s.io) & [Examples](https://releases.k8s.io/release-1.6.3/examples)
-### Change Description
+## Change Description
 Modificación de fuentes en Front de NRFM
 
 Date and Hour | Responsible Contact | Nissan Approbation
