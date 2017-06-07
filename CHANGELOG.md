@@ -28,8 +28,8 @@ Modificación de fuentes en Front de NRFM
 
 Date and Hour | Responsible Contact | Nissan Approbation
 ------------- | ------------------- | ------------------
+21/05/17 | Eduardo Malfabon (Terán) | Ana Migliano (NRFM)
 
-21/05/17 | Eduardo Malfabon - Terán | Ana Migliano - NRFM
 21:00 | 5555555555 | 5555555555
 
 ### Date and Hour
