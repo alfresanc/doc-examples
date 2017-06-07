@@ -31,12 +31,6 @@ Date and Hour | Responsible Contact | Nissan Approbation
 21/05/17 | Eduardo Malfabon (Terán) | Ana Migliano (NRFM)
 21:00 | 5555555555 | 5555555555
 
-### Date and Hour
-21/05/17 21:00
-### Responsible
-Eduardo Malfabon - Terán
-### Nissan Approbation
-Ana Migliano - NRFM
 ## Affected Files
 filename | file path on this version
 -------- | -------------------------
