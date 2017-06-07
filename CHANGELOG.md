@@ -25,8 +25,10 @@
 [Documentation](https://docs.k8s.io) & [Examples](https://releases.k8s.io/release-1.6.3/examples)
 ### Change Description
 Modificación de fuentes en Front de NRFM
+
 Date and Hour | Responsible Contact | Nissan Approbation
 ------------- | ------------------- | ------------------
+
 21/05/17 | Eduardo Malfabon - Terán | Ana Migliano - NRFM
 21:00 | 5555555555 | 5555555555
 
