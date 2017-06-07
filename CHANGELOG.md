@@ -97,9 +97,3 @@ go build -o toc
 ```
 --storage-media-type application/json
 ```
-<img src="docs/images/newgui.png" width="" alt="Dashboard UI screenshot showing cards that represent applications that run inside a cluster" title="Dashboard UI apps screen">
-
-Rutas: `application/vnd.kubernetes.protobuf`
-Comandos:
-``` --storage-media-type application/json
-```
